@@ -1,0 +1,42 @@
+// 单模块 Gradle Android 工程：根工程即 app 模块。
+// 注意：AGP 9 已内置 Kotlin 支持，无需再单独应用 org.jetbrains.kotlin.android 插件。
+plugins {
+    id("com.android.application") version "9.3.2"
+}
+
+android {
+    namespace = "com.example.code3"
+    compileSdk {
+        version = release(37)
+    }
+
+    defaultConfig {
+        applicationId = "com.example.code3"
+        minSdk = 24
+        targetSdk = 37
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            optimization {
+                enable = false
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.8.0")
+    implementation("androidx.core:core-ktx:1.19.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+}

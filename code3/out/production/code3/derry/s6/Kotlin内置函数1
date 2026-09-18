@@ -1,0 +1,76 @@
+
+
+内置函数总结
+
+apply: info.apply
+apply函数返回类型，用于都是info本身
+apply函数的 匿名函数里面持有的是this == info本身， 此条和 run一样
+
+
+let函数返回类型，是根据匿名函数最后一行的变化而变化， 此条和 run一样
+let函数的匿名含书里面持有的it == 集合本身 此条和also一样
+
+str.run
+run函数返回类型，是根据匿名函数最后一行的变化而变化 此条和let一样
+run函数的匿名函数里面持有的 this== str本身 此条apply一样
+
+with(str)
+with函数返回类型，是根据匿名函数最后一行变化而变化 此条和let一样
+with函数的匿名函数里持有的this==str本身， 此条apply一样
+
+str.also
+apply函数返回类型，用户str本身， 此条apply一样
+also函数的匿名函数持有的是it == str， 此条let一样
+
+
+// apply 与also 是属于一类的函数
+apply 与also返回类型，是一样的，他们永远返回info本身，匿名函数，最后一行无法作为返回值，不影响函数
+不同点： 匿名函数里面 apply{ 持有this  setFilexx()  }   also { 持有it   it.sexFilexx() }
+val info本身 = info.apply {
+     this == info本身
+     ...
+     "Derry"
+}
+val info本身 = info.also {
+    it == info本身
+    ...
+    true
+}
+
+
+//  run 与 let 与 with 是属于一类的函数
+val r: Boolean类型 = info.run { this == info本身
+    length
+    344
+    true // 最后一行
+}
+
+val r: char类型 - info.let {  it == info本身
+    it.length
+    3443
+    true
+    'A'  // 最后一行
+}
+上面的run 使用环节， info.run{}
+下面的with使用环节，  with(info) {}
+
+相同点： with与run 与let返回类型，是一样的，都会根据匿名函数最后一行返回类型决定 run与let的返回类型（是根据匿名函数最后一行变化而变化）
+不同点： 匿名函数类面 run持有this  let持有it with持有this
+应用点： info.run { show("内容：$this") show("内容长度$length") show("${if (this is String) xxx else xxx }")}
+    info.let { show("内容：it") show("内容长度$length") show("${if (it is String) xxx else xxx }")}
+    with(info) { show("内容：$this") show("内容长度$length") show("${if (this is String) xxx else xxx }")}
+
+
+// let 与apply
+1.let返回类型是根据匿名函数变化而变化（lambda的返回类型变化而变化）
+2.匿名函数里面持有的是 it == I ==  info本身
+inline fun <I, O>  I.let(lambda: (I) -> O) = lambda(this)
+
+1. apply函数返回类型永远都是 I （lambda的返回类型无法变化，写的是Unit,并且没有和lambda关联返回类型）
+2.匿名函数里面持有的 this == I == info本身
+inline fun <I> I.apply(lambda : I.() -> Unit) :I {
+    lambda()
+    return this
+}
+
+

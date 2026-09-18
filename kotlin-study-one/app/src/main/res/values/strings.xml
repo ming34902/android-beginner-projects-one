@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KotlinStudyOne</string>
+    <string name="roll">Roll</string>
+    <string name="todo">TODO</string>
+    <string name="btnOne">${btnOne}</string>
+    <string name="btnTwo">${btnTwo}</string>
+    <string name="textToTwo">这是传递的内容1</string>
+    <string name="textOne">${TEXTOne}</string>
+    <string name="textTwo">${TEXTTwo}</string>
+</resources>

@@ -1,0 +1,18 @@
+
+
+RxJava:
+  便利 线程切换 操作符  map&flatMap  祖线程子线程的切换
+  基于一个事件流，实现异步操作库，类似Handler AsyncTask，观察者模式
+
+新的体系
+    mvvm  jetpack compose(APK，解决xml 编程及转换效率)  NDK指令的优化压缩（neno 编译优化gradle） + flow(异步的处理 多个线程等待 替换掉RxJava)
+
+事件流
+  jdk1.8 Stream ,collection 链式编程 事件流--消息分发机制（EventBus,RxBus, liveDataBus，）数据流--数据本身处理（Flow ,RxJava）
+
+阻塞与非阻塞问题
+  AB线程交叉打印： 非阻塞
+
+
+协程 是轻量级别的线程，协程不能脱离线程而运行，在不同线程之间切换。
+最大程度简化异步并发任务，用同步代码写异步效果
