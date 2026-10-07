@@ -19,6 +19,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/derry" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/data_binding_base_class_source_out/debug/out" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/.kotlin" />
@@ -90,6 +91,16 @@
           <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.14.9/3e6d101343c7ea687cd593e4990f73b25c878383/okhttp-3.14.9.jar!/" />
           <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.17.2/78c7820b205002da4d2d137f6f312bd64b3d6049/okio-1.17.2.jar!/" />
           <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/bd47a2ab7ec47f7aa6bdc94a0b854cec/transformed/databinding-runtime-9.3.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/575cbb02f192c7ae159171c041540519/transformed/databinding-adapters-9.3.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/bdaf2867e24d3276ec34cae83c6c0c09/transformed/databinding-ktx-9.3.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/9.3.2/6f14d56ba3258fd1e803e71bc6c589235141c317/databinding-common-9.3.2.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/0c91affae99cc48d564138be133c8f35/transformed/viewbinding-9.3.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/9bbe50db2460acebeffadc8a161b5495/transformed/lifecycle-viewmodel-ktx-2.6.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/a6a1434f21178de4acd39a5e164482b9/transformed/lifecycle-livedata-ktx-2.6.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/de6a0ac934f86ef703560b297aab6580/transformed/lifecycle-livedata-core-ktx-2.6.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/3649d854d6e2699bd8aec31a9aa29989/transformed/lifecycle-runtime-ktx-2.6.2/jars/classes.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/9.5.0/transforms/53e53e183f26f8c6dbb6ab3ed9d7b2ce/transformed/lifecycle-service-2.6.2/jars/classes.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

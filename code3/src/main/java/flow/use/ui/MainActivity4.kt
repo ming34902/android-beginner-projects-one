@@ -107,10 +107,23 @@ class MainActivity4 : AppCompatActivity() {
         mProgressDialog?.setTitle("请求服务器中...")
         mProgressDialog?.show()
 
+        // GlobalScope 全局的作用域 协程，默认异步线程
         GlobalScope.launch(Dispatchers.Main) {
+            // 异步请求1
             var serverResponseInfo = requestLoadUser()
             textView.text = serverResponseInfo // 更新UI
             textView.setTextColor(Color.GREEN) // 更新UI
+
+            // 异步请求2
+            serverResponseInfo = requestLoadUseAssets()
+            textView.text = serverResponseInfo // 更新UI
+            textView.setTextColor(Color.BLUE) // 更新UI
+
+            // 异步请求3
+            serverResponseInfo = requestLoadUserOrders()
+            textView.text = serverResponseInfo // 更新UI
+            mProgressDialog?.dismiss()
+            textView.setTextColor(Color.RED) // 更新UI
         }
     }
 }
