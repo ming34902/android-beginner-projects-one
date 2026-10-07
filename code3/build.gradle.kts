@@ -39,4 +39,11 @@ dependencies {
     implementation("androidx.core:core-ktx:1.19.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
+    // ---- 网络请求：Retrofit + OkHttp + Gson ----
+    implementation("com.squareup.retrofit2:retrofit:2.10.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.10.0")
+    // RxJava2 适配器（课程中「RxJava 版本」的接口返回 RxJava 的 Observable）
+    implementation("com.squareup.retrofit2:adapter-rxjava2:2.10.0")
+    implementation("io.reactivex.rxjava2:rxjava:2.2.21")
 }

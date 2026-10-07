@@ -82,6 +82,14 @@
           <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar!/" />
           <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/org.jspecify/jspecify/1.0.0/7425a601c1c7ec76645a78d22b8c6a627edee507/jspecify-1.0.0.jar!/" />
           <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.10.0/22d2236f6dde8773c3617062be43910f2aec97c5/retrofit-2.10.0.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.10.0/e67f81a4a7a7b125fc600e003cc2f601902b28e2/converter-gson-2.10.0.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava2/2.10.0/341b8d432b36ead78672df642e61c981985471f4/adapter-rxjava2-2.10.0.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.21/6f13f24c44567fc660aab94d639cda9f0fe95628/rxjava-2.2.21.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.4/3864a1320d97d7b045f729a326e1e077661f31b7/reactive-streams-1.0.4.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.14.9/3e6d101343c7ea687cd593e4990f73b25c878383/okhttp-3.14.9.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.17.2/78c7820b205002da4d2d137f6f312bd64b3d6049/okio-1.17.2.jar!/" />
+          <root url="jar://C:/Users/ming3/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

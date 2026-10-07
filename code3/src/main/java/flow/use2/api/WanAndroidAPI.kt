@@ -1,4 +1,4 @@
-package flow.use.api
+package flow.use2.api
 
 import flow.use.entity.LoginRegisterResponse
 import flow.use.entity.LoginRegisterResponseWrapper
@@ -28,18 +28,4 @@ interface WanAndroidAPI {
     @FormUrlEncoded
     fun registerAction(@Field("username") username: String, @Field("password") password: String, @Field("repassword") repassword: String)
             : Call<LoginRegisterResponseWrapper<LoginRegisterResponse>>
-
-
-    // 下面是协程API --suspend
-    // 登录API
-    @POST("/user/login")
-    @FormUrlEncoded
-    suspend fun loginActionCoroutine(@Field("username") username: String, @Field("password") password: String)
-            : LoginRegisterResponseWrapper<LoginRegisterResponse>
-
-    // 注册API
-    @POST("/user/register")
-    @FormUrlEncoded
-    suspend fun registerActionCoroutine(@Field("username") username: String, @Field("password") password: String, @Field("repassword") repassword: String)
-            : LoginRegisterResponseWrapper<LoginRegisterResponse>
 }

@@ -15,4 +15,13 @@ RxJava:
 
 
 协程 是轻量级别的线程，协程不能脱离线程而运行，在不同线程之间切换。
-最大程度简化异步并发任务，用同步代码写异步效果
+最大程度简化异步并发任务，用同步代码写异步效果（ 避免阻塞 UI 线程，协程替代了传统繁琐的回调）
+
+
+协程+Retrofit+ViewModel+LiveData+DataBinding网络通信  （数据从网络请求发起，沿着清晰的链路分层传递，最终自动渲染到界面上）
+
+viewModel触发协程请求 ->
+  Repository 仓库层（区分本地SQL和web网络请求，调用 Retrofit suspend 获取服务端数据） ->
+  Retrofit API（网络请求客户端） ->
+  ViewModel(LiveData) ->
+   DataBinding （xml绑定ViewModel/LiveData数据-更新UI）
