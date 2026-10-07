@@ -28,6 +28,11 @@ android {
         }
     }
 
+    // 开启 DataBinding（activity_main5.xml 里的 <layout> / <variable> / @{} 需要它）
+    buildFeatures {
+        dataBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -39,6 +44,10 @@ dependencies {
     implementation("androidx.core:core-ktx:1.19.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
+    // ViewModel / LiveData / viewModelScope
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
     // ---- 网络请求：Retrofit + OkHttp + Gson ----
     implementation("com.squareup.retrofit2:retrofit:2.10.0")

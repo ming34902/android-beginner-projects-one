@@ -37,7 +37,7 @@ import kotlin.time.Duration.Companion.milliseconds
 
 /**
  * 模拟：第一层请求 —— 请求用户信息
- * suspend 标记该函数 是可异步挂起
+ * suspend 标记该函数 是可异步挂起， suspend 与 withContext 一起
  */
 private suspend fun requestLoadUser(): String {
     val isLoadSuccess = true
@@ -58,7 +58,7 @@ private suspend fun requestLoadUser(): String {
  * 模拟：第二层请求 —— 请求用户资产信息
  * suspend 标记该函数 是可异步挂起
  */
-private suspend fun requestLoadUseAssets(): String {
+suspend fun requestLoadUseAssets(): String {
     val isLoadSuccess = true
 
     withContext(Dispatchers.IO) {
@@ -75,7 +75,7 @@ private suspend fun requestLoadUseAssets(): String {
 /**
  * 模拟：第三层请求 —— 请求用户订单信息
  */
-private suspend fun requestLoadUserOrders() : String {
+suspend fun requestLoadUserOrders() : String {
     val isLoadSuccess = true
 
     withContext(Dispatchers.IO) {
@@ -107,10 +107,23 @@ class MainActivity4 : AppCompatActivity() {
         mProgressDialog?.setTitle("请求服务器中...")
         mProgressDialog?.show()
 
+        // GlobalScope 全局的作用域 协程，默认异步线程
         GlobalScope.launch(Dispatchers.Main) {
+            // 异步请求1
             var serverResponseInfo = requestLoadUser()
             textView.text = serverResponseInfo // 更新UI
             textView.setTextColor(Color.GREEN) // 更新UI
+
+            // 异步请求2
+            serverResponseInfo = requestLoadUseAssets()
+            textView.text = serverResponseInfo // 更新UI
+            textView.setTextColor(Color.BLUE) // 更新UI
+
+            // 异步请求3
+            serverResponseInfo = requestLoadUserOrders()
+            textView.text = serverResponseInfo // 更新UI
+            mProgressDialog?.dismiss()
+            textView.setTextColor(Color.RED) // 更新UI
         }
     }
 }

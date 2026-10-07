@@ -12,7 +12,7 @@ import com.example.code3.R
 import flow.use.api.APIClient
 import flow.use.entity.LoginRegisterResponse
 import flow.use.entity.LoginRegisterResponseWrapper
-import flow.use2.api.WanAndroidAPI
+import flow.use.api.WanAndroidAPI
 
 class MainActivity1 : AppCompatActivity() {
 

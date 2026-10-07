@@ -7,7 +7,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Code3">
         <activity
-            android:name="flow.use.ui.MainActivity3"
+            android:name="flow.use.ui.MainActivity5"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Code3">
