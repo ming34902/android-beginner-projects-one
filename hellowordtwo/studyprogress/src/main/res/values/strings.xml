@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">studyprogress</string>
+    <string name="img_pgbar_desc">加载中帧动画</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/studyanroidlog" />
+            <option value="$PROJECT_DIR$/studydependencies" />
+            <option value="$PROJECT_DIR$/studyimage" />
+            <option value="$PROJECT_DIR$/studyimagebotton" />
+            <option value="$PROJECT_DIR$/studyprogress" />
+          </set>
+        </option>
+        <option name="myGradleHome" value="D:\gradle\gradle-9.8.1" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

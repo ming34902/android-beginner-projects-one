@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:ignoreGravity="@id/son1"
+    >
+    <RelativeLayout
+        android:id="@+id/son1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#343434">
+        <TextView
+            android:id="@+id/tvTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son1"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/son2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:background="#ffaaff">
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son2"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/son3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eecc55">
+        <TextView
+            android:id="@+id/tvTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son3"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/son4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/son3"
+        android:layout_toEndOf="@id/son3"
+        android:background="#667744">
+        <TextView
+            android:id="@+id/tvTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son4"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/son5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/son1"
+        android:background="#993434">
+        <TextView
+            android:id="@+id/tvTitle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son5"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/son6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@id/son1"
+        android:background="#445500">
+        <TextView
+            android:id="@+id/tvTitle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son6"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/son7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@id/son1"
+        android:layout_below="@id/son1"
+        android:layout_marginEnd="30dp"
+        android:background="#ff4430">
+        <TextView
+            android:id="@+id/tvTitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/son7"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</RelativeLayout>

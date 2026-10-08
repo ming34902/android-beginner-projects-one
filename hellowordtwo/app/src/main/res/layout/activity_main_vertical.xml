@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:dividerPadding="300dp"
+    android:showDividers="middle"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:divider="@drawable/ic_launcher_background"
+    tools:context=".MainActivity"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:background="#ffaaff"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#454545">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World-java!" />
+
+</LinearLayout>

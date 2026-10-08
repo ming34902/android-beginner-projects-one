@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">hello-word-two</string>
+
+    <string name="son1">son1</string>
+    <string name="son2">son2</string>
+    <string name="son3">son3</string>
+    <string name="son4">son4</string>
+    <string name="son5">son5</string>
+    <string name="son6">son6</string>
+    <string name="son7">son7</string>
+    <string name="son8">son8</string>
+    <string name="son9">son9</string>
+    <string name="son10">son10</string>
+
+    <string name="send">send</string>
+    <string name="to">to</string>
+    <string name="subject">subject</string>
+    <string name="message">message</string>
+
+    <string name="text1">我们一起我们一起asaf assa er我们一起我们一起1</string>
+    <string name="hint_to">请输入内容to</string>
+
+    <string name="pwd_one">请输入密码</string>
+</resources>
