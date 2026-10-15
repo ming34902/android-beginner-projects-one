@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    日历中的一格。
+    上面是日期数字（36dp 圆形区域，用于显示"选中/今天"的背景），
+    下面是节假日名称（没有节假日时隐藏）。
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        tools:text="16" />
+
+    <TextView
+        android:id="@+id/tv_holiday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/calendar_holiday_text"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:text="国庆节"
+        tools:visibility="visible" />
+
+</FrameLayout>

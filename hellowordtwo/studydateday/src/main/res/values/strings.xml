@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">studydateday</string>
+
+    <!-- 多个占位符必须带位置序号（%1$d / %2$d ...），否则无法在多语言下安全替换 -->
+    <string name="date_result">您选择的日期是：%1$d年%2$d月%3$d日</string>
+    <string name="time_result">您选择的时间是：%1$d时%2$d分%3$d秒</string>
+</resources>

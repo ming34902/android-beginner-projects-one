@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Switch 滑块的 selector。
+    selector 从上到下取第一个 state 全部满足的 item，
+    所以最后一项不带 state 作为默认兜底（否则控件被 setEnabled(false) 时图标会消失）。
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/switch_btn_pressed" />
+    <item
+        android:drawable="@drawable/switch_btn_normal" />
+</selector>

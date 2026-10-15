@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 选择结果文字颜色 -->
+    <color name="result_text">#FF6200EE</color>
+
+    <!-- ==================== 日历文字 ==================== -->
+    <!-- 周六 / 周日：红色 -->
+    <color name="calendar_weekend_text">#FFE53935</color>
+    <!-- 工作日：近黑 -->
+    <color name="calendar_normal_text">#FF333333</color>
+    <!-- 非本月的日期（上下月补位）：浅灰 -->
+    <color name="calendar_other_month_text">#FFBDBDBD</color>
+    <!-- 节假日名称：红 -->
+    <color name="calendar_holiday_text">#FFE53935</color>
+    <!-- 星期表头 -->
+    <color name="calendar_weekday_label">#FF757575</color>
+    <!-- 选中日期的文字（压在实心圆上，用白色） -->
+    <color name="calendar_selected_text">#FFFFFFFF</color>
+
+    <!-- ==================== 标记背景 ==================== -->
+    <!-- 选中日期：实心圆 -->
+    <color name="calendar_selected_bg">#FF6200EE</color>
+    <!-- 今天：空心圆描边 -->
+    <color name="calendar_today_stroke">#FF6200EE</color>
+
+    <!-- ==================== 背景水印 ==================== -->
+    <!-- 大号月份数字：紫色、约 12% 不透明度 -->
+    <color name="calendar_watermark">#1F6200EE</color>
+</resources>

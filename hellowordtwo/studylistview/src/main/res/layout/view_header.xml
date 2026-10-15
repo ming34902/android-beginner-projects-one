@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ListView 的表头（通过 addHeaderView 添加）。
+    根布局高度必须是 wrap_content —— 用 match_parent 会撑满整个 ListView 高度，
+    把下面所有列表项都挤出去。
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header_bg"
+    android:gravity="center"
+    android:minHeight="48dp"
+    android:text="@string/header_title"
+    android:textColor="@color/white"
+    android:textSize="18sp" />

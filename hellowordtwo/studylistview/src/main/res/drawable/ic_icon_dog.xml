@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 狗：爪印（掌垫 + 三个脚趾） -->
+    <path
+        android:fillColor="#FF8D6E63"
+        android:pathData="M12,12 A4,4 0 1,1 12,20 A4,4 0 1,1 12,12 Z" />
+    <path
+        android:fillColor="#FF8D6E63"
+        android:pathData="M6.5,8.8 A2.2,2.2 0 1,1 6.5,13.2 A2.2,2.2 0 1,1 6.5,8.8 Z" />
+    <path
+        android:fillColor="#FF8D6E63"
+        android:pathData="M12,6.3 A2.2,2.2 0 1,1 12,10.7 A2.2,2.2 0 1,1 12,6.3 Z" />
+    <path
+        android:fillColor="#FF8D6E63"
+        android:pathData="M17.5,8.8 A2.2,2.2 0 1,1 17.5,13.2 A2.2,2.2 0 1,1 17.5,8.8 Z" />
+</vector>

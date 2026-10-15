@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">studycalendar</string>
+
+    <!-- 星期表头（周日打头，与日历第一列一致） -->
+    <string name="weekday_sun">日</string>
+    <string name="weekday_mon">一</string>
+    <string name="weekday_tue">二</string>
+    <string name="weekday_wed">三</string>
+    <string name="weekday_thu">四</string>
+    <string name="weekday_fri">五</string>
+    <string name="weekday_sat">六</string>
+
+    <string name="prev_month">‹</string>
+    <string name="next_month">›</string>
+
+    <string name="month_title">%1$d年%2$d月</string>
+
+    <!-- 多个占位符必须带位置序号（%1$d / %2$d ...），否则无法在多语言下安全替换 -->
+    <string name="calendar_result">您选择的日期是：%1$d年%2$d月%3$d日</string>
+    <string name="calendar_result_holiday">您选择的日期是：%1$d年%2$d月%3$d日（%4$s）</string>
+</resources>

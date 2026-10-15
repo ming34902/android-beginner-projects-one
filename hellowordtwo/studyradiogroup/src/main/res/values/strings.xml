@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">studyradiogroup</string>
+
+    <!-- 单选项组 -->
+    <string name="title_choose_gender">请选择性别</string>
+    <string name="gender_man">男</string>
+    <string name="gender_woman">女</string>
+    <string name="btn_submit">提交</string>
+    <string name="toast_radio_changed">按钮组值发生改变,你选了%1$s</string>
+    <string name="toast_radio_submit">点击提交按钮,获取你选择的是:%1$s</string>
+    <string name="toast_radio_none">你还没有选择性别</string>
+
+    <!-- 复选项组 -->
+    <string name="title_choose_hobby">请选择爱好</string>
+    <string name="hobby_one">阅读</string>
+    <string name="hobby_two">运动</string>
+    <string name="hobby_three">音乐</string>
+    <string name="btn_submit_hobby">提交爱好</string>
+    <string name="toast_hobby_submit">你选择的爱好是:%1$s</string>
+    <string name="toast_hobby_none">你还没有选择任何爱好</string>
+</resources>

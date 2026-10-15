@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">studyseekbar</string>
+    <string name="txt_cur_default">当前进度值: 0  / 100</string>
+</resources>

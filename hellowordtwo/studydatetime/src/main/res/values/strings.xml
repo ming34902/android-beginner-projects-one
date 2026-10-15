@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">studydatetime</string>
+
+    <string name="btn_start">开始记时</string>
+    <string name="btn_stop">停止记时</string>
+    <string name="btn_reset">重置</string>
+    <string name="btn_format">格式化</string>
+
+    <!-- Chronometer.setFormat() 需要一个包含 %s 的格式串，%s 会被替换成 mm:ss -->
+    <string name="chronometer_format">Time：%s</string>
+
+    <string name="toast_time_up">时间到了~</string>
+
+    <!-- %1$d 是秒数占位符，与代码里的 TEN_SECONDS_MS / 1000 对应 -->
+    <string name="toast_elapsed_seconds">已计时 %1$d 秒</string>
+</resources>

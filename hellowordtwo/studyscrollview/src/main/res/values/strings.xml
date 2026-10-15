@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">studyscrollview</string>
+
+    <string name="btn_up">顶部</string>
+    <string name="btn_down">底部</string>
+
+    <!-- %1$d 是行号占位符，供 getString(R.string.line_item, i) 使用 -->
+    <string name="line_item">呵呵 * %1$d</string>
+</resources>

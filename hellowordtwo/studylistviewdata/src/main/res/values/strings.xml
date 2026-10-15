@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">studylistviewdata</string>
+
+    <string name="btn_add">添加一项</string>
+    <string name="btn_add_at">插入到第4位</string>
+    <string name="btn_remove_selected">删除选中</string>
+    <string name="btn_remove_at">删除第3项</string>
+    <string name="btn_clear">清空</string>
+
+    <string name="item_text">给猪哥跪了~~~ x %1$d</string>
+
+    <string name="toast_no_selection">请先在列表里点选一项</string>
+    <string name="toast_cleared">已清空</string>
+    <string name="toast_removed">已删除：%1$s</string>
+</resources>

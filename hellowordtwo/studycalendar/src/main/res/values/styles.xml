@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        星期表头的一格。
+        宽度 0dp + weight=1，7 格等分整个宽度 ——
+        这样每一格的中心正好与 RecyclerView（GridLayoutManager 7 列等分）的列中心对齐。
+    -->
+    <style name="CalendarWeekdayLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/calendar_weekday_label</item>
+    </style>
+</resources>

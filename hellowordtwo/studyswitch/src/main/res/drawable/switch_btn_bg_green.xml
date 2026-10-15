@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Switch 的轨道（track）选中态：绿色圆角长条 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FF96E85D" />
+    <corners android:radius="20dp" />
+    <size
+        android:width="110dp"
+        android:height="40dp" />
+</shape>

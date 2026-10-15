@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 滚动区域的浅色底，便于直观看出可滚动范围 -->
+    <color name="scroll_area_bg">#FFF3F3F3</color>
+</resources>

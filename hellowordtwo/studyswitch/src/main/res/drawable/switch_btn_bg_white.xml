@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Switch 的轨道（track）未选中态。
+    原名是 "bg_white"，但纯白在白色背景上看不见，这里用浅灰以保证可见。
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFDDDDDD" />
+    <corners android:radius="20dp" />
+    <size
+        android:width="110dp"
+        android:height="40dp" />
+</shape>

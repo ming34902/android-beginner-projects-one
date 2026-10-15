@@ -11,10 +11,19 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/studyanroidlog" />
+            <option value="$PROJECT_DIR$/studycalendar" />
+            <option value="$PROJECT_DIR$/studydateday" />
+            <option value="$PROJECT_DIR$/studydatetime" />
             <option value="$PROJECT_DIR$/studydependencies" />
             <option value="$PROJECT_DIR$/studyimage" />
             <option value="$PROJECT_DIR$/studyimagebotton" />
+            <option value="$PROJECT_DIR$/studylistview" />
+            <option value="$PROJECT_DIR$/studylistviewdata" />
             <option value="$PROJECT_DIR$/studyprogress" />
+            <option value="$PROJECT_DIR$/studyradiogroup" />
+            <option value="$PROJECT_DIR$/studyscrollview" />
+            <option value="$PROJECT_DIR$/studyseekbar" />
+            <option value="$PROJECT_DIR$/studyswitch" />
           </set>
         </option>
         <option name="myGradleHome" value="D:\gradle\gradle-9.8.1" />

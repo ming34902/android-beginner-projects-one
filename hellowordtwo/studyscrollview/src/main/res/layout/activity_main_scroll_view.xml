@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityScrollView">
+
+    <!--
+        content 用 0dp × 0dp 四边约束到父布局，等于铺满整屏。
+        内边距放在这一层，而不是放在根布局上 —— 因为 Java 里会用 insets
+        给根布局 setPadding()，若根布局自己也有 padding 会被覆盖掉。
+    -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 按钮行：两个按钮各占一半宽度 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_up" />
+
+            <Button
+                android:id="@+id/btn_down"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="@string/btn_down" />
+        </LinearLayout>
+
+        <!--
+            ScrollView 用 height=0dp + weight=1 吃掉按钮行之外的全部剩余高度。
+            固定高度（或 wrap_content）都会导致它不滚动或撑破屏幕。
+        -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@color/scroll_area_bg"
+            android:padding="8dp"
+            android:scrollbars="vertical">
+
+            <!--
+                ScrollView 只能有 1 个直接子 View，所以 100 行文字全部装在
+                这一个 TextView 里；它的高度是 wrap_content，即「内容总高」。
+                scrollToBottom() 正是用 它的高度 - ScrollView 高度 算出滚动量。
+            -->
+            <TextView
+                android:id="@+id/txt_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                tools:text="呵呵 * 1" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,11 +10,11 @@
     <!-- 帧动画：src 指向 res/drawable/amin_pgbar.xml 这个 animation-list -->
     <ImageView
         android:id="@+id/img_pgbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="240dp"
         android:contentDescription="@string/img_pgbar_desc"
-        android:src="@drawable/amin_pgbar"
+        android:src="@drawable/admin_pgbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,5 +77,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pgbar_horizontal" />
+
+    <!--
+        自定义 View：XML 里必须写全限定类名（包名 + 类名）。
+        这个 View 内部会从 0 自增到 mTargetProgress(=90)，画一圈绿色圆弧 + 百分比文字。
+    -->
+    <com.example.studyprogress.CirclePgBar
+        android:id="@+id/circle_pgbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pgbar_horizontal_indeterminate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 列表项标题 / 副标题 -->
+    <color name="item_title">#FF212121</color>
+    <color name="item_subtitle">#FF757575</color>
+
+    <!-- ListView 表头背景 / 文字 -->
+    <color name="header_bg">#FF43BBEB</color>
+</resources>

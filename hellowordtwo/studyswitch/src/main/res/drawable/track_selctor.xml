@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Switch 轨道的 selector：按 state_checked 切换开/关的颜色。
+    最后一项不带 state 作为默认兜底。
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/switch_btn_bg_green" />
+    <item
+        android:drawable="@drawable/switch_btn_bg_white" />
+</selector>

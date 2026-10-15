@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    CheckBox 的自定义按钮外观（配合 android:button 使用）。
+    selector 的匹配规则：从上到下取第一个 state 全部满足的 item，
+    所以「已选中」必须排在前面，最后一项不带 state 作为默认兜底。
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/ic_checkbox_checked" />
+    <item
+        android:drawable="@drawable/ic_checkbox_normal" />
+</selector>

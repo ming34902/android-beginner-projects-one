@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityCalendar">
+
+    <!--
+        为什么不用平台的 <CalendarView>？
+        它只暴露 focusedMonthDateColor / dateTextAppearance 这类「全局」样式，
+        没有任何按单元格着色的钩子 —— 无法做到「周六周日红色」和「节假日标记」。
+        所以这里用 RecyclerView（GridLayoutManager 7 列）自己拼一个日历网格。
+    -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ==================== 头部：上月 / 标题 / 下月 ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_prev_month"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:text="@string/prev_month"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_month_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="2026年10月" />
+
+            <Button
+                android:id="@+id/btn_next_month"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:text="@string/next_month"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- ==================== 星期表头：日 一 二 三 四 五 六 ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_sun"
+                android:textColor="@color/calendar_weekend_text" />
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_mon" />
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_tue" />
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_wed" />
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_thu" />
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_fri" />
+
+            <TextView
+                style="@style/CalendarWeekdayLabel"
+                android:text="@string/weekday_sat"
+                android:textColor="@color/calendar_weekend_text" />
+        </LinearLayout>
+
+        <!-- ==================== 日历网格（水印在下，网格在上） ==================== -->
+
+        <!--
+            FrameLayout 高度 wrap_content，会正好包住 6 行网格；
+            后声明的子 View 叠在上层，所以 RecyclerView 必须在 tv_watermark 之后。
+        -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <!--
+                大号月份数字水印。
+                includeFontPadding=false 去掉字体自带的上下留白，让数字在网格中更居中。
+                网格的单元格背景是透明的，所以水印能透出来。
+            -->
+            <TextView
+                android:id="@+id/tv_watermark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/calendar_watermark"
+                android:textSize="180sp"
+                android:textStyle="bold"
+                tools:text="10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+        </FrameLayout>
+
+        <!-- ==================== 选择结果 ==================== -->
+
+        <TextView
+            android:id="@+id/tv_calendar_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="@color/result_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="您选择的日期是：2026年10月16日" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

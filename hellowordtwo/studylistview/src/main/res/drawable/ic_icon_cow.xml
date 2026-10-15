@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 牛：犄角 -->
+    <path
+        android:fillColor="#FFFFD54F"
+        android:pathData="M7.5,3 A1.5,1.5 0 1,1 7.5,6 A1.5,1.5 0 1,1 7.5,3 Z" />
+    <path
+        android:fillColor="#FFFFD54F"
+        android:pathData="M16.5,3 A1.5,1.5 0 1,1 16.5,6 A1.5,1.5 0 1,1 16.5,3 Z" />
+
+    <!-- 牛：耳朵 -->
+    <path
+        android:fillColor="#FF5D4037"
+        android:pathData="M4.5,8.4 A2,1.6 0 1,1 4.5,11.6 A2,1.6 0 1,1 4.5,8.4 Z" />
+    <path
+        android:fillColor="#FF5D4037"
+        android:pathData="M19.5,8.4 A2,1.6 0 1,1 19.5,11.6 A2,1.6 0 1,1 19.5,8.4 Z" />
+
+    <!-- 牛：头 -->
+    <path
+        android:fillColor="#FFFFF3E0"
+        android:pathData="M12,6.5 A5.5,6.5 0 1,1 12,19.5 A5.5,6.5 0 1,1 12,6.5 Z" />
+
+    <!-- 牛：眼睛 -->
+    <path
+        android:fillColor="#FF3E2723"
+        android:pathData="M9.5,11 A1,1 0 1,1 9.5,13 A1,1 0 1,1 9.5,11 Z" />
+    <path
+        android:fillColor="#FF3E2723"
+        android:pathData="M14.5,11 A1,1 0 1,1 14.5,13 A1,1 0 1,1 14.5,11 Z" />
+
+    <!-- 牛：口鼻 -->
+    <path
+        android:fillColor="#FFF48FB1"
+        android:pathData="M12,14.5 A2.5,2 0 1,1 12,18.5 A2.5,2 0 1,1 12,14.5 Z" />
+</vector>

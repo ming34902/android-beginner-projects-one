@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">studyswitch</string>
+
+    <string name="toggle_on">打开声音</string>
+    <string name="toggle_off">关闭声音</string>
+    <string name="switch_on">开关:ON</string>
+    <string name="switch_off">开关:OFF</string>
+</resources>
